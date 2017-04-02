@@ -1,0 +1,25 @@
+{
+  "name": "ut",
+  "version": "1.0.0",
+  "description": "Demo of unit testing with karma, mocha and chai",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "karma",
+    "mocha",
+    "chai",
+    "automation",
+    "unit testing",
+    "ut"
+  ],
+	"devDependencies": {
+		"karma": "*"
+	},
+  "author": "VJ",
+  "license": "MIT"
+}
