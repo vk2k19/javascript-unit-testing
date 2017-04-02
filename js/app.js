@@ -5,7 +5,11 @@
 
 (function () {
 
-	window.add =  function (a, b) {
+	window.add = function (a, b) {
+
+		if (typeof a === 'string' || typeof b === 'string') {
+			throw Error('Required number got string');
+		}
 		return a + b;
 	};
 

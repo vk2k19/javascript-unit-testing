@@ -18,7 +18,14 @@
     "ut"
   ],
 	"devDependencies": {
-		"karma": "*"
+		"karma": "*",
+		"mocha": "*",
+		"chai": "*",
+		"karma-mocha": "*",
+		"karma-chai": "*",
+		"karma-sinon": "*",
+		"karma-sinon-chai": "*",
+		"sinon": "*"
 	},
   "author": "VJ",
   "license": "MIT"
