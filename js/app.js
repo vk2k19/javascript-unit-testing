@@ -36,14 +36,6 @@
 				}
 			});
 		});
-
-		$resultWrapper.addEventListener('click', function (evt) {
-			if (evt.target.className.indexOf('btn-like-item') !== -1) {
-				evt.preventDefault();
-				evt.target.innerText = 'liked';
-				evt.target.className += ' disabled';
-			}
-		});
 	};
 
 	$(function () {
