@@ -22,10 +22,7 @@
 		"mocha": "*",
 		"chai": "*",
 		"karma-mocha": "*",
-		"karma-chai": "*",
-		"karma-sinon": "*",
-		"karma-sinon-chai": "*",
-		"sinon": "*"
+		"karma-chai": "*"
 	},
   "author": "VJ",
   "license": "MIT"

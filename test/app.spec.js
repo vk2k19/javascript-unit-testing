@@ -1,16 +1,20 @@
-describe("App calculator", function () {
-	describe("addition", function () {
+var componentSearch = window.search;
 
-		it("Sum of two strings must throw error", function () {
-			var result = function (){
-				add('1', 2);
-			};
-			expect(result).to.throw(Error);
+describe("search and search result listing", function () {
+
+	describe("search", function () {
+		it("verify search is initialized", function () {
+			componentSearch.init();
 		});
 
-		it("Sum of two numbers must be returned", function () {
-			var result = add(2, 3);
-			expect(result).to.be.equal(5, 'Success criteria: 2 + 3 =  '+result);
-		});
+		it("verify the request is made with proper value and successfull response obtained");
+
+		it("verify the request is made with incorrect value and error response obtained");
+	});
+
+	describe("result listing", function () {
+		it("verify the result is listed for given response abc");
+
+		it("verify the no result is generated for error");
 	});
 });
