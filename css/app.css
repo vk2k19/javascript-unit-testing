@@ -7,3 +7,7 @@ body {
 	color: #aaa;
 }
 
+h1 {
+	margin: 0;
+	padding: 3.5rem 0 1.75rem 0;
+}
