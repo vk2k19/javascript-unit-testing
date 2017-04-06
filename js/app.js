@@ -46,6 +46,11 @@
 				$target.dataset.pagenumber = parseInt(currentPage,0) + 1;
 			}
 
+			if (evt.target.className.indexOf('btn-like-item') !== -1) {
+				evt.preventDefault();
+				evt.target.innerText = 'liked';
+				evt.target.className += ' disabled';
+			}
 		});
 
 		function getListItem(response, pageNumber, resultLimit) {
