@@ -17,13 +17,16 @@
     "unit testing",
     "ut"
   ],
-	"devDependencies": {
-		"karma": "*",
-		"mocha": "*",
-		"chai": "*",
-		"karma-mocha": "*",
-		"karma-chai": "*"
-	},
+  "devDependencies": {
+    "chai": "*",
+    "karma": "*",
+    "karma-chai": "*",
+    "karma-chai-sinon": "^0.1.5",
+    "karma-mocha": "*",
+    "karma-sinon": "^1.0.5",
+    "mocha": "*",
+    "sinon": "^2.1.0"
+  },
   "author": "VJ",
   "license": "MIT"
 }

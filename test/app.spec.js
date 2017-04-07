@@ -1,3 +1,4 @@
+
 var componentSearch = window.search;
 
 describe("search and search result listing", function () {
@@ -9,10 +10,14 @@ describe("search and search result listing", function () {
 			document.body.innerHTML = '<form id="searchForm"><input name="searchTerm" value=""/></form><div class="results" id="results"><p class="no-results"></p></div>';
 
 			component = new componentSearch(document.getElementById("searchForm"), document.getElementById("results"));
+
 		});
 
 		it("verify search is initialized", function () {
 			expect(component).to.be.an.instanceOf(componentSearch);
+			expect(component.name).to.be.not.null;
+			expect(component.$target).to.be.not.null;
+			expect(component.$results).to.be.not.null;
 			var searchObject = component.init();
 			expect(searchObject).to.be.equal(component);
 		});
@@ -41,7 +46,7 @@ describe("search and search result listing", function () {
 		});
 	});
 
-	describe("result 111 listing", function () {
+	describe("result listing", function () {
 		var component, itemData;
 		beforeEach(function () {
 			//setup node
@@ -72,7 +77,7 @@ describe("search and search result listing", function () {
 			component = new componentSearch(document.getElementById("searchForm"), document.getElementById("results"));
 		});
 
-		it.only("verify the result is listed for given response abc", function () {
+		it("verify the result is listed for given response abc", function () {
 			expect($(component.results).children('.no-results').length).to.be.equal(1);
 			component.responseHandler.call(component, itemData);
 			expect($(component.results).children('.no-results').length).to.be.equal(0);
