@@ -19,6 +19,7 @@
   "author": "VJ",
   "license": "MIT",
   "dependencies": {
+    "bootstrap-icons": "^1.13.1",
     "jquery": "^3.7.1"
   },
   "devDependencies": {
